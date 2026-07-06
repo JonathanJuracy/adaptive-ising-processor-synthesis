@@ -1,0 +1,35 @@
+// Tang Nano 1K 27 MHz clock
+IO_LOC "clk" 47;
+IO_PORT "clk" IO_TYPE=LVCMOS33;
+
+// Logic analyzer CH0
+IO_LOC "clk_slow" 40;
+IO_PORT "clk_slow" IO_TYPE=LVCMOS33;
+
+// Logic analyzer CH1
+IO_LOC "update_en" 41;
+IO_PORT "update_en" IO_TYPE=LVCMOS33;
+
+// Logic analyzer CH2
+IO_LOC "rand_bit" 38;
+IO_PORT "rand_bit" IO_TYPE=LVCMOS33;
+
+// Logic analyzer CH3
+IO_LOC "spin_0" 39;
+IO_PORT "spin_0" IO_TYPE=LVCMOS33;
+
+// Logic analyzer CH4
+IO_LOC "spin_1" 35;
+IO_PORT "spin_1" IO_TYPE=LVCMOS33;
+
+// Logic analyzer CH5
+IO_LOC "spin_2" 34;
+IO_PORT "spin_2" IO_TYPE=LVCMOS33;
+
+// Logic analyzer CH6
+IO_LOC "spin_3" 20;
+IO_PORT "spin_3" IO_TYPE=LVCMOS33;
+
+// Logic analyzer CH7
+IO_LOC "best_update" 19;
+IO_PORT "best_update" IO_TYPE=LVCMOS33;

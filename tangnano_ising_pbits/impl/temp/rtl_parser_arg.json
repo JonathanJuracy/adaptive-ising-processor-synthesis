@@ -1,0 +1,17 @@
+{
+ "Device" : "GW1NZ-1",
+ "Files" : [
+  {
+   "Path" : "C:/Users/jonathan.carneiro/Desktop/06-07-2026-Jonathan/simulacao_fisica/tangnano_ising_pbits/src/top.v",
+   "Type" : "verilog"
+  }
+ ],
+ "IncludePath" : [
+
+ ],
+ "LoopLimit" : 2000,
+ "ResultFile" : "C:/Users/jonathan.carneiro/Desktop/06-07-2026-Jonathan/simulacao_fisica/tangnano_ising_pbits/impl/temp/rtl_parser.result",
+ "Top" : "",
+ "VerilogStd" : "verilog_2001",
+ "VhdlStd" : "vhdl_93"
+}

@@ -1,0 +1,17 @@
+-d C:\Users\jonathan.carneiro\Desktop\06-07-2026-Jonathan\simulacao_fisica\tangnano_ising_pbits\impl\gwsynthesis\tangnano_ising_pbits.vg
+-p GW1NZ-1-QFN48-6
+-pn GW1NZ-LV1QN48C6/I5
+-cst C:\Users\jonathan.carneiro\Desktop\06-07-2026-Jonathan\simulacao_fisica\tangnano_ising_pbits\src\tangnano1k.cst
+-cfg C:\Users\jonathan.carneiro\Desktop\06-07-2026-Jonathan\simulacao_fisica\tangnano_ising_pbits\impl\pnr\device.cfg
+-bit
+-tr
+-ph
+-timing
+-cst_error
+-convert_sdp32_36_to_sdp16_18
+-place_option 0
+-route_option 0
+-clock_route_order 0
+-correct_hold 1
+-route_maxfan 10
+-global_freq 50.000

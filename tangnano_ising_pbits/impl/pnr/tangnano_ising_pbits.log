@@ -1,0 +1,30 @@
+Reading netlist file: "C:\Users\jonathan.carneiro\Desktop\06-07-2026-Jonathan\simulacao_fisica\tangnano_ising_pbits\impl\gwsynthesis\tangnano_ising_pbits.vg"
+Parsing netlist file "C:\Users\jonathan.carneiro\Desktop\06-07-2026-Jonathan\simulacao_fisica\tangnano_ising_pbits\impl\gwsynthesis\tangnano_ising_pbits.vg" completed
+Processing netlist completed
+Reading constraint file: "C:\Users\jonathan.carneiro\Desktop\06-07-2026-Jonathan\simulacao_fisica\tangnano_ising_pbits\src\tangnano1k.cst"
+Physical Constraint parsed completed
+Running placement......
+[10%] Placement Phase 0 completed
+[20%] Placement Phase 1 completed
+[30%] Placement Phase 2 completed
+WARN  (TA1132) :  'clk' was determined to be a clock but was not created.
+[50%] Placement Phase 3 completed
+Running routing......
+[60%] Routing Phase 0 completed
+[70%] Routing Phase 1 completed
+[80%] Routing Phase 2 completed
+[90%] Routing Phase 3 completed
+Running timing analysis......
+[95%] Timing analysis completed
+Placement and routing completed
+Bitstream generation in progress......
+Bitstream generation completed
+Running power analysis......
+[100%] Power analysis completed
+Generate file "C:\Users\jonathan.carneiro\Desktop\06-07-2026-Jonathan\simulacao_fisica\tangnano_ising_pbits\impl\pnr\tangnano_ising_pbits.power.html" completed
+Generate file "C:\Users\jonathan.carneiro\Desktop\06-07-2026-Jonathan\simulacao_fisica\tangnano_ising_pbits\impl\pnr\tangnano_ising_pbits.pin.html" completed
+Generate file "C:\Users\jonathan.carneiro\Desktop\06-07-2026-Jonathan\simulacao_fisica\tangnano_ising_pbits\impl\pnr\tangnano_ising_pbits.rpt.html" completed
+Generate file "C:\Users\jonathan.carneiro\Desktop\06-07-2026-Jonathan\simulacao_fisica\tangnano_ising_pbits\impl\pnr\tangnano_ising_pbits.rpt.txt" completed
+Generate file "C:\Users\jonathan.carneiro\Desktop\06-07-2026-Jonathan\simulacao_fisica\tangnano_ising_pbits\impl\pnr\tangnano_ising_pbits.tr.html" completed
+Mon Jul  6 10:53:00 2026
+
