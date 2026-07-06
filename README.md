@@ -1,100 +1,64 @@
-Claro. Use esta versão mais resumida para copiar e colar no:
+# Adaptive Ising Processor Synthesis
+
+This repository contains the source code used to support the development and validation of an adaptive probabilistic processor synthesis flow based on the Ising model.
+
+The project is organized into two main folders:
+
+## Repository structure
 
 ```text
-adaptive_ising_tool/README.md
+adaptive-ising-processor-synthesis/
+├── adaptive_ising_tool/
+│   └── Source code of the adaptive Ising-based synthesis tool.
+│
+├── article_simulation/
+│   └── Scripts and data used to generate the simulation results and plots presented in the article.
+│
+└── README.md
 ```
 
-````markdown
-# Adaptive Ising Tool
+## adaptive_ising_tool
 
-This folder contains the adaptive Ising simulation tool developed for the master's dissertation:
+This folder contains the main tool implementation. It includes the routines responsible for mapping combinatorial optimization problems to the Ising model, defining the required number of probabilistic elements, and selecting the update strategy used during simulation.
 
-**Tool for the Synthesis of Adaptive Probabilistic Processors Based on the Ising Model**
+The tool is intended to support experiments with probabilistic computing architectures based on p-bits, MTJs, and Ising-machine-inspired optimization flows.
 
-The tool allows the user to define an optimization problem, preprocess the input data, build the corresponding Ising Hamiltonian, configure the probabilistic machine, select an update algorithm, and run the simulation.
+## article_simulation
 
-## Contents
+This folder contains the scripts used to reproduce the experimental results shown in the article. It includes the simulation setup, benchmark configuration, consolidated numerical results, and plot generation routines.
 
-* `ising_adaptive_tool.py`: main script of the adaptive Ising tool.
-* `examples/example_maxcut_problem.json`: example input problem.
-* `README.md`: basic documentation for this tool.
+The results cover representative optimization problems such as TSP, graph coloring, SAT, matching, segmentation, and Max-Cut.
 
 ## Requirements
 
-* Python 3.10 or higher
-* NumPy
-* Pandas
-* Matplotlib
+Each folder may include its own `requirements.txt` file with the Python packages required to execute the corresponding scripts.
 
-## How to Run
-
-Inside the `adaptive_ising_tool/` folder, run:
+A typical setup is:
 
 ```bash
-python ising_adaptive_tool.py --input examples/example_maxcut_problem.json --output results --algorithm auto --iterations 500
-````
-
-To run all available algorithms:
-
-```bash
-python ising_adaptive_tool.py --input examples/example_maxcut_problem.json --output results_all --algorithm all --iterations 500
+pip install -r requirements.txt
 ```
 
-## Supported Problems
+or, when inside a specific folder:
 
-The current version supports:
+```bash
+cd article_simulation
+pip install -r requirements.txt
+```
 
-* `custom_ising`
-* `maxcut`
-* `coloring`
-* `tsp`
-* `max2sat`
-* `matching`
-* `segmentation`
+## General purpose
 
-## Output Files
+The repository provides a compact and reproducible implementation of an adaptive Ising-based simulation flow, supporting both tool development and article result generation.
 
-The simulation generates:
+## Citation
 
-* `ising_J.csv`
-* `ising_h.csv`
-* `simulation_results.csv`
-* `energy_trace.csv`
-* `energy_trace.png`
-* `summary.json`
+If this repository is used as a reference, please cite the related work:
 
-## General Workflow
-
-The tool follows the dissertation flow:
-
-1. input data and problem definition;
-2. preprocessing;
-3. Ising Hamiltonian construction;
-4. probabilistic machine configuration;
-5. algorithm selection;
-6. simulation;
-7. result generation.
-
-## Implemented Algorithms
-
-* Gibbs Sampling
-* Simulated Annealing
-* Simulated Quantum Annealing
-* Cluster-based updates
-
-## Author
-
-Jonathan Juracy Carneiro da Silva
-Graduate Program in Microelectronics — PGMICRO/UFRGS
-
-## Note
-
-This tool is intended for academic purposes and accompanies the methodology presented in the master's dissertation.
-
-````
-
-Mensagem de commit:
-
-```text
-Add dissertation tool README
-````
+```bibtex
+@article{da2026tool,
+  title={A Tool for the Synthesis of Adaptive Probabilistic Processors Based on the Ising Model},
+  author={da Silva, Jonathan Juracy Carneiro and Gobatto, Leonardo R. and Azambuja, Jose Rodrigo},
+  journal={arXiv preprint arXiv:2606.19533},
+  year={2026}
+}
+```
